@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMAZING Farms</title>
+<link rel="stylesheet" href="farmpagecss.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5fff2;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#2d6a4f;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#ffd166;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    background:#52b788;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:#40916c;
+}
+
+/* Sections */
+
+section{
+    padding:70px 10%;
+}
+
+.title{
+    text-align:center;
+    color:#2d6a4f;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* About */
+
+.about{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:450px;
+    max-width:100%;
+    border-radius:10px;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text p{
+    line-height:1.8;
+}
+
+/* Products */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px;
+    color:#2d6a4f;
+}
+
+.card p{
+    margin:0 15px 20px;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    max-width:600px;
+    padding:15px;
+    margin:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    padding:15px 35px;
+    background:#2d6a4f;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* Footer */
+
+footer{
+    background:#2d6a4f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+<h2>🌾 AMAZING Farms</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="productsonfarmsite.html"> Products</a></li>
+<li><a href="contact-amazingfarm.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="hero">
+<div>
+<h1>Fresh From Our Farm</h1>
+<p>•Healthy Crops • Organic Vegetables • Happy Farmers • Chickens • Cows • Goats </p>
+<button> <a href="explore-amazingfarm.html"> Explore Farm </a></button>
+</div>
+</div>
+
+<section id="about">
+<h2 class="title">About Our Farm</h2>
+
+<div class="about">
+
+<div class="about-text">
+
+<p>
+Welcome to Amazing Farms. We grow fresh vegetables,
+organic fruits, and healthy crops using sustainable
+farming methods. we also provide the best livestocks in town. Our goal is to provide fresh food
+while protecting nature for future generations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2 class="title">Our Products</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/waterleaf.jpg">
+<h3>Fresh Vegetables</h3>
+<p>Organic vegetables harvested daily.</p>
+</div>
+
+<div class="card">
+<img src="images/pinapple.jpg">
+<h3>Fresh Fruits</h3>
+<p>Sweet and healthy fruits directly from the farm.</p>
+</div>
+
+<div class="card">
+<img src="images/maize.jpeg">
+<h3>Grains</h3>
+<p>Premium quality maize, rice, and wheat.</p>
+</div>
+
+<div class="card">
+<img src="images/broiler.jpg" width="155px" height="166px"><br>
+<h3>Chickens</h3>
+<p>Healthy chickens for both indivual and company consumption.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<br>
+
+<button>Send Message</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Amazing Farms | Fresh Food, Healthy Life</p>
+
+</footer>
+
+</body>
+</html>
